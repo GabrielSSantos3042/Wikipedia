@@ -1,0 +1,123 @@
+/* Defina a cor de fundo para todo o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9accff; /* Cor de fundo azul */
+    min-height: 100vh; /* Certifique-se de que o corpo ocupe pelo menos 100% da altura da janela */
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-width: 2px;
+    width: 100%;
+    background-color: #9accff; /* Cor de fundo branca */
+}
+
+nav {
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #9accff; /* Cor de fundo branca */
+    border-color: #ffffff;
+    border-width: 2px;
+    border-top-width: 2px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.content {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9accff; /* Cor de fundo branca */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.main {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.main h2 {
+    margin-top: 0;
+}
+
+.image-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    background-color: #ffff; /* Cor de fundo branca */
+}
+
+@media (min-width: 768px) {
+    .content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .main {
+        max-width: 50%;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .image-container {
+        max-width: 50%;
+        margin-top: 0;
+        justify-content: flex-start;
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+    }
+}
